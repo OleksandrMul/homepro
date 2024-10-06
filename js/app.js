@@ -4072,7 +4072,6 @@
             return configWatcher;
         }
         scrollWatcherCreate(configWatcher) {
-            console.log(configWatcher);
             this.observer = new IntersectionObserver(((entries, observer) => {
                 entries.forEach((entry => {
                     this.scrollWatcherCallback(entry, observer);
