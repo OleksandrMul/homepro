@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20241006160336">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241226163148">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +18,13 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="60" class="header">
 			<div class="header__container">
-				<div class="header__logo"><img src="img/logo.svg" alt="header-logo"></div>
+				<a href="#" data-goto-header data-goto=".main" class="header__logo"><img src="img/logo.svg" alt="header-logo"></a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto-header data-goto=".main" class="menu__link">Home</a></li>
 							<li class="menu__item"><a href="#" data-goto-header data-goto=".about" class="menu__link">About Us</a></li>
 							<li class="menu__item"><a href="#" data-goto-header data-goto=".services" class="menu__link">Services</a></li>
 							<li class="menu__item"><a href="#" data-goto-header data-goto=".blog" class="menu__link">Our Blog</a></li>
@@ -32,13 +33,14 @@
 					</nav>
 				</div>
 				<div class="header__info">
-					<div data-da=".menu__body, 767.98" class="header__schedule">24 Hour Services</div>
+					<a href="tel:" type="button" class="header__button _icon-phone"></a>
+					<div data-da=".menu__body, 589.98" class="header__schedule">24 Hour Services</div>
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
 		</header>
 		<main class="page">
-			<section data-watch class="page__main main">
+			<section data-watch="navigator" data-watch-threshold="0.01" class="page__main main">
 				<div class="main__wrapper">
 					<div class="main__image main__image--left"><img src="img/hero/image-left.webp" alt="main-image"></div>
 					<div class="main__body">
@@ -81,7 +83,7 @@
 					<div class="main__image main__image--right"><img src="img/hero/image-right.webp" alt="main-image"></div>
 				</div>
 			</section>
-			<section data-watch="navigator" data-watch-threshold="0.3" class="page__about about">
+			<section data-watch="navigator" data-watch-threshold="0.1" class="page__about about">
 				<div class="about__container">
 					<div class="about__body">
 						<div class="about__header block-header">
@@ -197,7 +199,7 @@
 					</div>
 				</div>
 			</section>
-			<section data-watch class="page__advantages advantages">
+			<section data-watch data-watch-threshold="0.1" class="page__advantages advantages">
 				<div class="advantages__wrapper">
 					<div class="advantages__container">
 						<div class="advantages__body">
@@ -268,7 +270,7 @@
 					</div>
 				</div>
 			</section>
-			<section data-watch class="page__how how">
+			<section data-watch data-watch-threshold="0.1" class="page__how how">
 				<div class="how__container">
 					<div class="how__image"><img src="img/how/image.webp" alt="how-image"></div>
 					<div class="how__body">
@@ -304,7 +306,7 @@
 					</div>
 				</div>
 			</section>
-			<section data-watch class="page__reviews reviews">
+			<section data-watch data-watch-threshold="0.1" class="page__reviews reviews">
 				<div class="reviews__container">
 					<div class="reviews__body">
 						<div class="reviews__header block-header block-header--center">
@@ -435,7 +437,7 @@
 					<button type="button" class="blog__view-more">View More</button>
 				</div>
 			</section>
-			<section data-watch class="page__questions questions">
+			<section data-watch data-watch-threshold="0.1" class="page__questions questions">
 				<div class="questions__container">
 					<div class="questions__header block-header">
 						<h2 class="block-header__title">Frequently Asked Questions</h2>
@@ -477,7 +479,7 @@
 					</div>
 				</div>
 			</section>
-			<section data-watch class="page__talk talk">
+			<section data-watch data-watch-threshold="0.1" class="page__talk talk">
 				<div class="talk__container">
 					<div class="talk__content">
 						<div class="talk__header block-header">
@@ -513,7 +515,7 @@
 				</div>
 				<div class="footer__main main-footer">
 					<div class="main-footer__content">
-						<div class="main-footer__logo"><img src="img/logo-white.svg" alt="main-footer-logo"></div>
+						<a href="#" data-goto-header data-goto=".main" class="main-footer__logo"><img src="img/logo-white.svg" alt="main-footer-logo"></a>
 						<div class="main-footer__text">
 							<p>Home Pro is your premier destination for top-notch smart home service and repair.</p>
 						</div>
@@ -604,7 +606,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241006160336"></script>
+	<script src="js/app.min.js?_v=20241226163148"></script>
 </body>
 
 </html>
